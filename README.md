@@ -1,7 +1,8 @@
-# CloudPlayer
+# Deezer Player
 Welcome to Deezer Player!
 
 Deezer Player enables the users to search for music and play short preview of it.
+The application uses [RapidAPI](https://rapidapi.com/) in order to access [Deezer's](https://www.deezer.com/) API.
 
 # Framework
 For building the application [react](https://reactjs.org/) framework is used.
@@ -11,11 +12,15 @@ Playing music is implemented using [Web Audio API](https://developer.mozilla.org
 # How to run locally
 In order to build locally, dependencies need to be installed firstly. This can be done using [yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/). The examples here are using yarn.
 
+## Setting RapidAPI Key
+In order to use your own API key for RapidAPI firstly you have to obtain one from their [website](https://rapidapi.com/). Then, in the root folder of the project create a file called ```.env``` and add:
+
+```REACT_APP_RAPID_API_KEY=<API key>```
+
+where <API key> should be replaced with your key.
+
 ## Installing dependencies
 ```yarn install```
-
-## Running tests
-```yarn test```
 
 ## Starting the server
 ```yarn start```
